@@ -1,0 +1,117 @@
+h1{
+    font-size: 40px;
+    padding: 20px;
+    margin: 5px;
+    font-family:'M PLUS 1', sans-serif;
+    text-align:justify;
+    color: white;
+}
+
+nav{
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.linea{
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: #695f55;
+}
+
+img{
+    width: 20vw;
+    margin: 20px;
+}
+
+header{
+    background-image: url("../imagenes/CABECERA.jpg");
+    background-size: cover;
+    height: 400px;
+    padding: 20px;
+}
+
+h2{
+    font-size: 40px;
+    color:black;
+    font-family:'M PLUS 1', sans-serif;
+    text-align: center;
+    animation-name: colores;
+    animation-duration: 40s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colores {
+0%{
+color: black;
+}
+25%{
+color:#bc3a4a;
+}
+75%{
+    color: white;
+}
+100%{
+    color: #c09672;
+}
+}
+
+.contactoContenido{
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 3px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input[type=submit]{
+    width: 25%;
+    background-color: #695f55;
+}
+
+input, textarea{
+    padding: 5px;
+}
+
+
+footer{
+    margin: 10px;
+    padding: 20px;
+    background-color: #bc3a4a;
+}
+
+.pie{
+    color: white;
+    text-align: right;
+    font-size: 15px;
+}
+

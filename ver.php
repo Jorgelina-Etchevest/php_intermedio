@@ -47,7 +47,7 @@
     <section class="caja_alumnos">
     <h3 class="alumno"><?php echo $mostrar_datos["nombre"]. " " . $mostrar_datos["apellido"];?></h3>
 
-    <p><a class="eliminar" href="eliminar.php?id=<?php echo $mostrar_datos["id_consulta"];?>">ELIMINAR</a></p>
+    <p><a class="eliminar" href="eliminar.php?id_consulta=<?php echo $mostrar_datos["id_consulta"];?>">ELIMINAR</a></p>
 
     </section>
 

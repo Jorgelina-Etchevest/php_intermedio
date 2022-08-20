@@ -23,14 +23,13 @@
         <li><a href="cursos.php">CURSOS</a></li>
         <li><a href="contacto.php">CONTACTO</a></li>
         <li><a href="ver.php">INSCRIPTOS</a></li>
-        <li><a href="salir.php">SALIR</a></li>
         </ul>
     </nav>
 
     <h1>CLASES DE ECONOMÍA</h1>
 </header>
 
-<h2>Ingreso</h2>
+<h2>Acceso al Campus</h2>
 <form action="validar.php" method="POST" class="formulario">
 
 <input type="text" name="usuario" required placeholder="Usuario">

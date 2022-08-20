@@ -32,11 +32,9 @@
 
 
 <?php
-
 session_start();
 if(isset($_SESSION['admin'])){
-
-    ?>
+?>
 
     <section class="contactoContenido">
 
@@ -63,9 +61,7 @@ if(isset($_SESSION['admin'])){
 <?php
 }else{
 header('location: cargar.php');
-
 }
-
 ?>
 
 

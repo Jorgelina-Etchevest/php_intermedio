@@ -29,27 +29,21 @@
     <h1>CLASES DE ECONOMÍA</h1>
 </header>
 
-<section class="contactoContenido">
+<h2>Ingreso</h2>
+<form action="validar.php" method="POST" class="formulario">
 
-    <form action="enviarContacto.php" method="POST">
-        <input type="text" name="nombre" class="contactoInput" placeholder="Ingrese su nombre" require>
-        <input type="text" name="apellido" class="contactoInput" placeholder="Ingrese su apellido" require>
-        <input type="email" name="email" class="contactoInput" placeholder="Ingrese su e-mail"require>
-        <input type="submit" value = "Inscribirme">
-    </form>
+<input type="text" name="usuario" required placeholder="Usuario">
+<input type="password" name="clave" id="" required placeholder="Contraseña">
+<input type="submit" value="Ingresar">
 
-    <form action="datos_almacenados.php" method="POST" class="consulta">
-        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Deje su comentario aquí" require></textarea>
-        <input type="submit" value = "Enviar Consulta">
-    </form>
 
-    <?php 
-    if (isset($_GET["e"])){
-        echo "<h3>Su consulta fue enviada con éxito</h3>";
+</form>
+
+<?php 
+    if (isset($_GET["error"])){
+        echo "<h3>Datos incorrectos</h3>";
     }
-    ?>
-
-</section>
+?>
 
 <footer>
     <p class="pie">Teléfono: 351 8193615</p>

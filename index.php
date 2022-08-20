@@ -25,6 +25,7 @@
         <li><a href="cursos.php">CURSOS</a></li>
         <li><a href="contacto.php">CONTACTO</a></li>
         <li><a href="ver.php">INSCRIPTOS</a></li>
+        <li><a href="salir.php">SALIR</a></li>
         </ul>
     </nav>
 

@@ -14,12 +14,22 @@ if($codigo_captcha == $_SESSION['codigo_captcha']){
     $mensaje_form = $_POST["mensaje"];
     $estado_carga = $_POST["estado"];
 
-    mysqli_query ($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form' , '$email_form','$mensaje_form','$estado_carga')");
+    $nombre_imagen= $_FILES['imagen']['name'];
+    $tamanio_imagen = $_FILES['imagen']['size'];
+    $tipo_imagen = $_FILES['imagen']['type'];
+    $tmp_imagen = $_FILES['imagen']['tmp_name'];
 
-    header(("location: cargar.php?e=ok"));
+    $destino = 'imagenes/'. $nombre_imagen;
 
     
-}else{
+    if(($tipo_imagen != 'image/jpg'  && $tipo_imagen != 'image/png' && $tipo_imagen != 'image/jpeg'  && $tipo_imagen != 'image/gif') or $tamanio_imagen > 200000){
+            header("location: cargar.php?error");
+            
+        }else{
+            move_uploaded_file($tmp_imagen,$destino);
+            mysqli_query ($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form' , '$email_form','$mensaje_form','$estado_carga')");
+            header(("location: cargar.php?e=ok"));
+        } } else{
     header("location: cargar.php?error_codigo");
 }
 

@@ -43,16 +43,17 @@ include ('header.php')?>
     if (isset($_GET["error_codigo"])){
         echo "<h3>Código de verificación incorrecto</h3>";
     }
-    ?>
-
-    <?php 
+    
     if (isset($_GET["e"])){
         echo "<h3>Su consulta fue enviada con éxito</h3>";
     }
+
+    if (isset($_GET["error"])){
+        echo "<h3>Imagen incorrecta. Verificar formato y tamaño</h3>";
+    }
     ?>
     </section>
-
-
+    
 <?php
 }else{
 header('location: cargar.php');

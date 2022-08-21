@@ -18,10 +18,11 @@ include ('header.php')?>
         $_SESSION['codigo_captcha'] = $nr1.$letra[$mezcla_letra].$nr2.$simbolo[$mezcla_simbolo].$nr3;
     ?>
 
-    <form action="enviarContacto.php" method="POST">
+    <form action="enviarContacto.php" method="POST" enctype="multipart/form-data">
         <input type="text" name="nombre" class="contactoInput" placeholder="Ingrese su nombre" require>
         <input type="text" name="apellido" class="contactoInput" placeholder="Ingrese su apellido" require>
         <input type="email" name="email" class="contactoInput" placeholder="Ingrese su e-mail"require>
+        <input type="file" name="imagen" id="" placeholder="Imagen"require>
         <select name="estado" id="">
             <option value="proceso">En proceso...</option>
             <option value="finalizado">Finalizado</option>

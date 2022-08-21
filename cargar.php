@@ -22,6 +22,12 @@ include ('header.php')?>
         <input type="text" name="nombre" class="contactoInput" placeholder="Ingrese su nombre" require>
         <input type="text" name="apellido" class="contactoInput" placeholder="Ingrese su apellido" require>
         <input type="email" name="email" class="contactoInput" placeholder="Ingrese su e-mail"require>
+        <select name="estado" id="">
+            <option value="proceso">En proceso...</option>
+            <option value="finalizado">Finalizado</option>
+
+
+        </select>
         <img src="captcha.php" alt="">
         <input type="text" name="captcha">
         <input type="submit" value = "Inscribirme">

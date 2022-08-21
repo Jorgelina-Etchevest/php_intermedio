@@ -12,8 +12,9 @@ if($codigo_captcha == $_SESSION['codigo_captcha']){
     $apellido_form = $_POST["apellido"];
     $email_form = $_POST["email"];
     $mensaje_form = $_POST["mensaje"];
+    $estado_carga = $_POST["estado"];
 
-    mysqli_query ($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form' , '$email_form','$mensaje_form')");
+    mysqli_query ($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form' , '$email_form','$mensaje_form','$estado_carga')");
 
     header(("location: cargar.php?e=ok"));
 

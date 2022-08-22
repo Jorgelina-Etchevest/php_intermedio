@@ -67,4 +67,3 @@ header('location: cargar_inscripcion.php');
 ?>
 
 <body>
-    

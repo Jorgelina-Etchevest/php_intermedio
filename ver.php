@@ -31,31 +31,25 @@
     </header>
 
 
+<h2>Acceso al Campus</h2>
+<form action="validar_inscripcion.php" method="POST" class="formulario">
+
+<input type="text" name="usuario" required placeholder="Usuario">
+<input type="password" name="clave" id="" required placeholder="Contraseña">
+<input type="submit" value="Ingresar">
 
 
-<section class="contenedor_alumno">
+</form>
 
 <?php 
-    include('conectar.php');
-    $consulta_bd = mysqli_query($conexion, "SELECT * FROM consultas");
+    if (isset($_GET["error"])){
+        echo "<h3>Datos incorrectos</h3>";
+    }
+?>
 
-    while($mostrar_datos=mysqli_fetch_assoc($consulta_bd)){
-    ?>
 
-    <section class="caja_alumnos">
-    <h3 class="alumno">ESTUDIANTE: <?php echo $mostrar_datos["nombre"]. " " . $mostrar_datos["apellido"];?></h3>
 
-    <h4>ESTADO DE LA INSCRIPCIÓN: <?php echo $mostrar_datos["estado"]?></h4>
 
-    <p><a class="eliminar" href="editar_estado.php?id_consulta=<?php echo $mostrar_datos["id_consulta"];?>">FINALIZAR INSCRIPCIÓN</a></p>
-
-    <p><a class="eliminar" href="eliminar.php?id_consulta=<?php echo $mostrar_datos["id_consulta"];?>">ELIMINAR INSCRIPCIÓN</a></p>
-
-    </section>
-
-    <?php }?>
-
-</section>
 
 <footer>
     <p class="pie">Teléfono: 351 8193615</p>

@@ -23,7 +23,6 @@
             <li><a href="cursos.php">CURSOS</a></li>
             <li><a href="contacto.php">CONTACTO</a></li>
             <li><a href="ver.php">INSCRIPTOS</a></li>
-            <li><a href="salir.php">SALIR</a></li>
             </ul>
         </nav>
     
@@ -31,7 +30,7 @@
     </header>
 
 
-<h2>Acceso al Campus</h2>
+<h2>Listado de inscriptos</h2>
 <form action="validar_inscripcion.php" method="POST" class="formulario">
 
 <input type="text" name="usuario" required placeholder="Usuario">

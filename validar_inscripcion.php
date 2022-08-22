@@ -11,5 +11,5 @@ if($_POST['usuario']=='admin' && $_POST['clave']=='admin123'){
     $_SESSION ['admin'] = $_POST['usuario'];
     header('location: cargar_inscripcion.php');
 }else{
- header('location: contacto.php?error');
+ header('location: ver.php?error');
 }

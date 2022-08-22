@@ -45,7 +45,7 @@ include ('header.php')?>
     }
     
     if (isset($_GET["e"])){
-        echo "<h3>Su consulta fue enviada con éxito</h3>";
+        echo "<h3>Su inscripción ha sido enviada con éxito</h3>";
     }
 
     if (isset($_GET["error"])){

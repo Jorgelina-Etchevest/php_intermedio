@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$conexion = mysqli_connect("localhost", "id18898029_jorgelina_etchevest","V^y^e*YxY@|sZAH2", "id18898029_php_intermedio") or exit ("No se pudo conectar a base de datos");
+$conexion = mysqli_connect("localhost", "root","", "php_intermedio") or exit ("No se pudo conectar a base de datos");
 
 $codigo_captcha = $_POST['captcha'];
 
@@ -27,7 +27,7 @@ if($codigo_captcha == $_SESSION['codigo_captcha']){
             
         }else{
             move_uploaded_file($tmp_imagen,$destino);
-            mysqli_query ($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form' , '$email_form,'$nombre_imagen','$mensaje_form','$estado_carga')");
+            mysqli_query ($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form' , '$email_form','$nombre_imagen','$mensaje_form','$estado_carga')");
             header(("location: cargar.php?e=ok"));
         } } else{
     header("location: cargar.php?error_codigo");

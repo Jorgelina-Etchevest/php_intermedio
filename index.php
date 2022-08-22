@@ -35,7 +35,7 @@
 
 <section class="presentacion">
 <div class="intro">
-   <p>Nuestros cursos de economía son personalizados. Tenemos amplia experiencia en la enseñanza de economía. Esperamos tu consulta, responderemos a la brevedad.</p>
+   <p>Nuestros cursos de economía son personalizados. Tenemos amplia experiencia en la enseñanza de economía. Esperamos tu consulta, responderemos a la brevedad.</br></br></br>Si desea inscribirse en alguno de nuestros cursos deberá entrar a la plataforma y enviar sus datos. También se le pedirá que adjunte una foto personal.</br></br></br>Para terminar la inscripción le pedimos se dirija a la lista de Inscriptos y finalice su inscripción. También desde allí podrá eliminarla si es que así lo desea.</p>
    <img src="./imagenes/economia.jpg" alt="">
 </div>
 </section>

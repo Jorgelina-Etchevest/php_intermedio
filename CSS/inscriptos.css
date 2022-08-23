@@ -10,6 +10,7 @@ h1{
 nav{
     text-align: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
 li{
@@ -109,7 +110,6 @@ p{
     align-content: center;
     align-items: center;
     gap: 20px;
-    background-color: white;
     width: 500px;
     margin: 0 auto;
     margin-top: 20px;
@@ -127,3 +127,18 @@ p{
     font-size: small;
 }
 
+.fin{
+    color:#bc3a4a;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.caja_alumnos{
+    gap: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 3px;
+}

@@ -10,7 +10,7 @@ if(isset($_SESSION ['admin'])){
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./CSS/contacto.css">
+        <link rel="stylesheet" href="./CSS/inscriptos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@700&family=Montserrat:ital,wght@1,200&family=Oswald&display=swap" 
@@ -47,12 +47,14 @@ if(isset($_SESSION ['admin'])){
 
 <section class="caja_alumnos">
     <h3 class="alumno">ESTUDIANTE: <?php echo $mostrar_datos["nombre"]. " " . $mostrar_datos["apellido"];?></h3>
+    
+    <img class="imagen_presentacion"src="imagenes/<?php echo $mostrar_datos["imagen"]?>"alt="">
 
-    <h4>ESTADO DE LA INSCRIPCIÓN: <?php echo $mostrar_datos["estado"]?></h4>
+    <h4 class="estado">ESTADO DE LA INSCRIPCIÓN: <?php echo $mostrar_datos["estado"]?></h4>
 
-    <p><a class="eliminar" href="editar_estado.php?id_consulta=<?php echo $mostrar_datos["id_consulta"];?>">FINALIZAR INSCRIPCIÓN</a></p>
+    <p><a class="fin" href="editar_estado.php?id_consulta=<?php echo $mostrar_datos["id_consulta"];?>">CONFIRMAR MI INSCRIPCIÓN</a></p>
 
-    <p><a class="eliminar" href="eliminar.php?id_consulta=<?php echo $mostrar_datos["id_consulta"];?>">ELIMINAR INSCRIPCIÓN</a></p>
+    <p><a class="eliminar" href="eliminar.php?id_consulta=<?php echo $mostrar_datos["id_consulta"];?>">ELIMINAR MI INSCRIPCIÓN</a></p>
 
     </section>
 
